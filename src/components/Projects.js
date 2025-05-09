@@ -1,6 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
-import { Box, Grid, Card, CardContent, CardMedia, Typography, Button, Collapse } from '@mui/material';
+import { Box, Grid, Card, CardContent, CardMedia, Typography} from '@mui/material';
 import bufandaItati from '../../src/assets/images/bufandaItati.jpg'
 import camperaBlancaItati from '../../src/assets/images/camperaBlancaItati.jpg'
 import camperaItati from '../../src/assets/images/camperaItati.jpg'
@@ -42,16 +42,6 @@ const projects = [
 ];
 
 const Projects = () => {
-  // Estado local para controlar el despliegue de cada proyecto
-  const [expanded, setExpanded] = useState({});
-
-  // Función para alternar el despliegue de cada proyecto
-  const toggleExpand = (index) => {
-    setExpanded((prev) => ({
-      ...prev,
-      [index]: !prev[index], // Cambia el estado actual del proyecto
-    }));
-  };
 
   return (
         <Box
