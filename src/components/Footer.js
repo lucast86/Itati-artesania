@@ -27,7 +27,7 @@ const Footer = () => {
                 alignItems: 'center' 
             }}
         >
-            <Typography>© 2024 Itati</Typography>
+            <Typography>©2025 Itati</Typography>
             <Box
                 sx={{
                     display: 'flex',

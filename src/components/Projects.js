@@ -1,5 +1,4 @@
 import React from 'react'
-import { useState } from 'react';
 import { Box, Grid, Card, CardContent, CardMedia, Typography} from '@mui/material';
 import bufandaItati from '../../src/assets/images/bufandaItati.jpg'
 import camperaBlancaItati from '../../src/assets/images/camperaBlancaItati.jpg'

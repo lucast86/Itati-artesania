@@ -1,0 +1,118 @@
+
+
+.slick-arrow.slick-prev,
+.slick-arrow.slick-next {
+  background-color: #6C528A;
+  width: 30px;
+  height: 50px;
+  border-radius: 20%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  transition: all 0.5s ease-in-out
+}
+
+
+
+.slick-prev::before,
+.slick-next::before{
+  display: none;
+}
+
+.iconSlick {
+  color: #ffffff;
+  transition: all 0.5s ease-in-out;
+}
+
+.iconSlick:hover {
+  font-size: 25px;
+}
+
+.container {
+  width: 100%;
+  background-color: #F5F5F5;
+}
+.container_slinder {
+  width: 90%; /* Ocupa todo el ancho disponible */
+  height: 100vh;
+  background-color: #F5F5F5;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 20px; /* Opcional: Añade un pequeño padding lateral si no quieres que el contenido toque los bordes */
+  box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Asegúrate de que el slider ocupe todo el ancho disponible */
+.container_slinder .slick-slider {
+  width: 100%;
+}
+
+/* Añade margen alrededor de cada tarjeta */
+.cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #6C528A;
+  background-color: #ffffff;
+  height: 500px;
+  width: 250px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 6px 0px #6C528A;
+  transition: 0.3s;
+  overflow: hidden; /* Evita que el contenido se salga */
+}
+
+.cards_img {
+  width: 100%; /* Ocupa todo el ancho de la tarjeta */
+  height: 85%; /* Ajusta según necesites (85% para dejar espacio al texto) */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden; /* Evita que la imagen se desborde */
+}
+
+.cards_img > img {
+  width: 100%; /* Ocupa todo el ancho disponible */
+  height: 100%; /* Ocupa toda la altura disponible */
+  object-fit: cover; /* Cubre todo el espacio sin deformarse (usa 'contain' si prefieres ver la imagen completa) */
+  border-radius: 6px 6px 0 0; /* Bordes redondeados solo arriba */
+}
+
+.cards h5 {
+   color: #6C528A;
+  text-align: center;
+  padding: 10px 5px;
+  margin: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  flex-shrink: 0;
+  /* Nuevas propiedades para manejar texto multilínea */
+  white-space: pre-line; /* Respeta saltos de línea pero colapsa espacios */
+  word-break: break-word; /* Rompe palabras largas si es necesario */
+  line-height: 1.3; /* Espaciado entre líneas (ajústalo según necesidad) */
+  min-height: 40px; /* Altura mínima para evitar desajustes */
+  box-sizing: border-box; /* Incluye padding en la altura total */
+}
+
+/* Asegúrate de que el contenedor del slider tenga espacio para los márgenes */
+.slick-slide > div {
+  margin: 0 15px; /* Espacio entre slides (aumenté de 10px a 15px) */
+}
+
+.slick-list {
+  margin: 0 -15px; /* Compensa el margen añadido a los slides */
+  padding: 10px 0; /* Espacio vertical adicional si lo necesitas */
+}
+

@@ -1,3 +1,4 @@
+import React from 'react'
 import { AppBar, Toolbar, Typography, Button, Box, Slide, IconButton, Drawer, List, ListItem, ListItemText } from '@mui/material';
 import { Link as ScrollLink } from 'react-scroll';
 import { useState, useEffect } from 'react';
@@ -20,7 +21,7 @@ const Header = () => {
 
   const menuItems = [
     { label: 'Sobre mí', to: 'about' },
-    { label: 'Proyectos', to: 'projects' },
+    { label: 'Proyectos', to: 'carrusel' },
     { label: 'Contacto', to: 'footer' },
   ];
 
